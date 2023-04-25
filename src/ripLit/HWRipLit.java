@@ -3,26 +3,29 @@ package ripLit;
 import java.util.Scanner;
 
 public class HWRipLit {
-    public static void main(String[] args) {
 
+    public static void main(String[] args)
+    {
+        {
+            int[][] a = {
+                    {-5,-2,-3,7},
+                    {1,-5,-2,2},
+                    {1,-2,3,-4}
+            };
+            int sum=0;
+            for(int i=0;i<a.length;i+=2){
+                for(int j=0;j<a[i].length;j+=2){
+                    sum=sum+a[i][j];
+                }
+            }System.out.println(sum);
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter your favorite car make");
-        String name= scanner.next();
-
-        switch (name){
-            case "BMW":
-                System.out.println("Your favorite car is german car");
-                break;
-            case "Toyota":
-                System.out.println("Your favorite car is japanese car");
-                break;
-            case "Maserati":
-                System.out.println("Your favorite car is italian car");
-                break;
 
         }
-        System.out.println("unknown");
+
+
 
     }
 }
+
+
+
