@@ -7,6 +7,7 @@ public class E8StringDemo {
         sentence=sentence.trim().toLowerCase();
 
         System.out.println(sentence.startsWith("java"));
+        System.out.println(sentence.endsWith("java"));
 
     }
 }
